@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경찰 퀴즈 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚔 경찰 퀴즈 게임 🚔</h1>
+        
+        <div id="start-screen" class="screen active">
+            <p>경찰에 대한 상식을 테스트해보세요!</p>
+            <button onclick="startGame()">게임 시작</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="progress">
+                <span id="current-question">1</span> / <span id="total-questions">10</span>
+            </div>
+            
+            <h2 id="question-text"></h2>
+            
+            <div id="options-container"></div>
+            
+            <button id="next-btn" onclick="nextQuestion()" disabled>다음</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>게임 종료!</h2>
+            <p id="score-text"></p>
+            <button onclick="restartGame()">다시 시작</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
