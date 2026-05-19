@@ -23,7 +23,7 @@ body {
     max-width: 600px;
     width: 100%;
     text-align: center;
-    color: #111; /* 컨테이너 안 글씨도 진하게 */
+    color: #111; /* 컨테이너 안 글씨 진하게 */
 }
 
 h1 {
@@ -81,40 +81,40 @@ h2 {
     padding: 15px;
     border: 2px solid #ddd;
     border-radius: 8px;
-    background: #f9f9f9;
+    background: #f9f9f9; /* 기본 배경 흰색 */
     cursor: pointer;
     font-size: 1.1em;
     transition: all 0.3s;
-    color: #222; /* 선택지 글씨 진하게 */
+    color: #222; /* 기본 글자색 검정 */
 }
 
 .option:hover {
-    background: #667eea;
-    color: white;
+    background: #667eea; /* hover 시 보라색 배경 */
+    color: #fff;         /* hover 시 흰 글씨 */
     border-color: #667eea;
 }
 
 .option.selected {
     background: #667eea;
-    color: white;
+    color: #fff;
     border-color: #667eea;
 }
 
 .option.correct {
     background: #4caf50;
-    color: white;
+    color: #fff;
     border-color: #4caf50;
 }
 
 .option.incorrect {
     background: #f44336;
-    color: white;
+    color: #fff;
     border-color: #f44336;
 }
 
 button {
     background: #667eea;
-    color: white;
+    color: #fff;
     border: none;
     padding: 12px 30px;
     font-size: 1.1em;
